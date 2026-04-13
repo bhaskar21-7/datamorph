@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "datamorph"
+version = "0.1.0"
+description = "Composable data transformation and validation pipeline for JSON, CSV, YAML, XML, and NDJSON"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+keywords = ["data", "transformation", "pipeline", "csv", "json", "yaml", "xml", "etl"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+yaml = ["pyyaml>=6.0"]
+all = ["pyyaml>=6.0"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "pyyaml>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/bhaskar21-7/datamorph"
+Repository = "https://github.com/bhaskar21-7/datamorph"
+Issues = "https://github.com/bhaskar21-7/datamorph/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["datamorph*"]
+
+[tool.pytest.ini_options]
+testpaths = ["../tests/python"]

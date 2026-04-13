@@ -1,0 +1,31 @@
+{
+  "name": "datamorph",
+  "version": "0.1.0",
+  "description": "Composable data transformation and validation pipeline for JSON, CSV, YAML, XML, and NDJSON",
+  "main": "src/index.js",
+  "bin": {
+    "datamorph": "./cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/js/test.js",
+    "lint": "eslint src/ cli.js"
+  },
+  "keywords": [
+    "data", "transformation", "pipeline", "csv", "json", "yaml", "xml", "etl", "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "optionalDependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhaskar21-7/datamorph"
+  }
+}
