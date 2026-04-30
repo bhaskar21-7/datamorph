@@ -4,7 +4,6 @@ transforms.py — pure, composable data transformation functions.
 All transforms accept a list of dicts (records) or a single dict,
 and return the same type they receive.
 """
-
 from typing import Any, Callable, Dict, List, Optional, Set, Union
 import re
 
